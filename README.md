@@ -48,11 +48,11 @@ After brute forcing, choose whether to save the output. If you opt to save, you 
 
 ## Example
 1.    $ python3 traversx.py  
-2.      Enter the target URL (replace the file with 'X'): http://example.com/something?file=X  
-3.      Enter the path to a custom wordlist (press Enter to use the default):   
-4.      Enter desired response codes to filter (comma-separated, e.g., 200,404): 200  
-5.      Do you want to save the output? (y/n): y  
-6.      Do you want to save the output with response codes? (y/n): y  
+2.    Enter the target URL (replace the file with 'X'): http://example.com/something?file=X  
+3.    Enter the path to a custom wordlist (press Enter to use the default):   
+4.    Enter desired response codes to filter (comma-separated, e.g., 200,404): 200  
+5.    Do you want to save the output? (y/n): y  
+6.    Do you want to save the output with response codes? (y/n): y  
 
 ## Disclaimer
 This tool is intended for educational purposes and authorized security testing only. Use it responsibly and ensure you have permission to test the target application
