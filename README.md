@@ -1,77 +1,23 @@
 # TraverseX
-Path Traversal Brute Force Tool
-This tool performs path traversal brute force attacks by replacing the target file parameter in a URL with various potential paths from a wordlist. It's useful for discovering vulnerabilities in web applications by testing if directories and files can be accessed through path traversal.
+# Path Traversal Brute Force Tool
 
-Features
-Accepts a target URL where the file parameter is replaced by X.
-Uses a custom wordlist for the brute force attack, or defaults to a built-in wordlist.
-Filters results by HTTP response codes (e.g., only show 200 or 404 responses).
-Saves the output in a specified format, with options to include or exclude HTTP response codes.
-Stores results in an output folder by default.
-Validates URLs before performing the brute force attack.
-Prerequisites
-Python 3.x
-requests library (pip install requests)
-validators library (pip install validators)
-Installation
-Clone or download this repository:
-git clone https://github.com/yourusername/path-traversal-bruteforce.git
-cd path-traversal-bruteforce
-Install required Python packages:
+## Overview
+This Python-based tool is designed to perform path traversal brute force attacks against web applications. It allows users to specify a target URL and a wordlist to replace a placeholder in the URL, attempting various path values to find vulnerable endpoints.
 
-(Optional) Add your custom wordlist file if you want to use one, or use the default wordlist.txt provided.
+## Features
+- Customizable wordlist: Use a default wordlist or specify your own.
+- Response code filtering: Focus on specific HTTP response codes during brute forcing.
+- Output management: Save results to a file with options for including or excluding response codes.
+- URL validation: Ensures that the provided target URL is valid before execution.
 
-Usage
-Run the script using the following format:
+## Prerequisites
+- Python 3.x
+- Required libraries: `requests`, `validators`
 
+You can install the required libraries using pip:
 
-python3 yourscript.py
-Options
-Target URL: The target URL must have a parameter where a file is being requested. Replace this file with X in the URL for the script to perform the brute force attack.
-
-Example:
-http://example.com/something?file=X
-Wordlist: You can provide your own wordlist, or press Enter to use the default wordlist included with the script (wordlist.txt).
-
-Response Code Filter: You can specify HTTP response codes to filter the results. For example, if you only want to see 200 or 404 responses, input:
-
-200,404
-Saving Results:
-
-After the brute force attack is completed, you'll be asked if you want to save the output:
-
-Do you want to save the output? (y/n)
-If yes, you'll be asked if you want to save the results with or without the response codes:
-
-
-Do you want to save the output with response codes? (y/n)
-The results will be saved in the output folder, and the file will be named after the target URL (with non-alphanumeric characters replaced).
-Example Walkthrough
-
-$ python3 yourscript.py
-Enter the target URL (replace the file with 'X'): http://example.com/something?file=X
-Enter the path to a custom wordlist (press Enter to use the default):
-Enter desired response codes to filter (comma-separated, e.g., 200,404): 200,404
-Trying: http://example.com/something?file=../../../etc/passwd
-[DEBUG] Response Code: 200, URL: http://example.com/something?file=../../../etc/passwd
-...
-Results:
-[INFO] URL: http://example.com/something?file=../../../etc/passwd, Response Code: 200
-Do you want to save the output? (y/n): y
-Do you want to save the output with response codes? (y/n): y
-[+] Output saved to output/example_com_something_file_X.txt
-Output Folder Structure
-The results of the brute force will be saved in an output folder. The filename will be based on the target URL, with special characters replaced by underscores.
-
-Example:
-output/example_com_something_file_X.txt
-Example Wordlist
-The default wordlist (wordlist.txt) contains common path traversal attempts such as:
-
-../../../etc/passwd
-../../../../../../windows/system32/drivers/etc/hosts
-../../../boot.ini
-You can modify or replace this wordlist based on your testing needs.
+```bash
+pip install requests validators
 
 Limitations
 This tool is designed for educational purposes and should only be used with permission from the owner of the target web application.
