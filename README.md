@@ -27,12 +27,12 @@ This tool is for educational purposes only. Misuse of this tool may lead to lega
 
 
 ## Getting Started
-**1. Clone the Repository**
+**1. Clone the Repository**  
         git clone https://github.com/kidhacker45/TraverseX  
         cd TraverseX  
-**2. Prepare the Wordlist**
+**2. Prepare the Wordlist**  
         Ensure you have a wordlist file named wordlist.txt in the same directory as the script or provide a custom path when prompted.
-**3. Run the Tool:**
+**3. Run the Tool:**  
         python3 traversex.py
 
 ## Usage
