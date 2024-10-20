@@ -17,18 +17,17 @@ This Python-based tool is designed to perform path traversal brute force attacks
 
 You can install the required libraries using pip:
 
-```bash
 pip install requests validators
 
-Limitations
+**Limitations**
 This tool is designed for educational purposes and should only be used with permission from the owner of the target web application.
 It assumes that the web application is vulnerable to path traversal attacks.
 Disclaimer
 This tool is for educational purposes only. Misuse of this tool may lead to legal consequences. The authors are not responsible for any damage or illegal activities performed with this tool. Use it ethically and responsibly.
 
 
-**Getting Started
-1. Clone the Repository**
+**Getting Started**
+**1. Clone the Repository**
         git clone https://github.com/kidhacker45/TraverseX
         cd TraverseX
 **2. Prepare the Wordlist**
