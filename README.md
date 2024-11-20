@@ -19,6 +19,10 @@ You can install the required libraries using pip:
 
 pip install requests validators
 
+or
+
+pip install -r requirements.txt
+
 **Limitations**
 This tool is designed for educational purposes and should only be used with permission from the owner of the target web application.
 It assumes that the web application is vulnerable to path traversal attacks.
