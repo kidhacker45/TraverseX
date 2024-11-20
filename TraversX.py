@@ -4,6 +4,11 @@ import re
 import validators  # Ensure this is installed: pip install validators
 from logofile import print_logo  # Import your logo function
 
+# Define colors
+NEON_YELLOW_GREEN = "\033[1;93m"  # Bold yellow neon green
+RED = "\033[1;91m"  # Bright red
+RESET = "\033[0m"  # Reset color
+
 # Specify the path to the default wordlist file (included in the same directory)
 DEFAULT_WORDLIST_FILE = "wordlist.txt"  # Ensure this file is included in your project
 OUTPUT_FOLDER = "output"  # Default output folder
@@ -40,9 +45,6 @@ def brute_force_path_traversal(base_url, wordlist, response_codes):
 
         try:
             response = requests.get(url, timeout=5)
-            # Print the response code for debugging
-            print(f"[DEBUG] Response Code: {response.status_code}, URL: {url}")  # Debug line
-            
             # Add the URL and its response code to results
             results.append((url, response.status_code))
         
@@ -88,15 +90,20 @@ def main():
 
     # Filter results based on desired response codes
     if response_codes:
-        matches = [f"[INFO] URL: {url}, Response Code: {code}" for url, code in results if str(code) in response_codes]
+        matches = [(url, code) for url, code in results if str(code) in response_codes]
     else:
-        matches = [f"[INFO] URL: {url}, Response Code: {code}" for url, code in results]
+        matches = results
 
     # Check if matches are found
     if matches:
         print("\nResults:")
-        for match in matches:
-            print(match)
+        for url, code in matches:
+            if code == 200:
+                print(f"{NEON_YELLOW_GREEN}[200] {url}{RESET}")  # Neon yellow-green for 200 responses
+            elif code == 400:
+                print(f"{RED}[400] {url}{RESET}")  # Red for 400 responses
+            else:
+                print(f"[{code}] {url}")
 
         # Ask user if they want to save the output
         save_output = input("Do you want to save the output? (y/n): ").strip().lower()
@@ -111,13 +118,11 @@ def main():
 
             try:
                 with open(output_file, 'w') as file:
-                    for match in matches:
+                    for url, code in matches:
                         if include_response_code == 'y':
-                            file.write(match + '\n')
+                            file.write(f"{url}, {code}\n")
                         else:
-                            # Save without response code (just the URL)
-                            url = match.split(",")[0].split(": ")[1]  # Extract the URL
-                            file.write(url + '\n')
+                            file.write(f"{url}\n")
                 print(f"[+] Output saved to {output_file}")
             except Exception as e:
                 print(f"[-] Error saving output: {e}")
@@ -128,4 +133,3 @@ def main():
 
 if __name__ == "__main__":
     main()
- 
