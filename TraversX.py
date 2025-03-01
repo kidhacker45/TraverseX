@@ -23,7 +23,7 @@ init(autoreset=True)
 
 # Constants
 PLACEHOLDER = "X45"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 GITHUB_URL = "https://github.com/kidhacker45/TraverseX"
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/kidhacker45/TraverseX/main/TraversX.py"
 DEFAULT_TIMEOUT = 10
