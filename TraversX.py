@@ -40,19 +40,21 @@ results = []
 
 
 def print_banner():
-    """Print a colorful banner for the tool."""
+    """Print the tool banner"""
     banner = f"""
-{Fore.CYAN}████████╗██████╗  █████╗ ██╗   ██╗███████╗██████╗ ███████╗███████╗██╗  ██╗
-{Fore.CYAN}╚══██╔══╝██╔══██╗██╔══██╗██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝╚██╗██╔╝
-{Fore.BLUE}   ██║   ██████╔╝███████║██║   ██║█████╗  ██████╔╝███████╗█████╗   ╚███╔╝ 
-{Fore.BLUE}   ██║   ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██╔══╝   ██╔██╗ 
-{Fore.MAGENTA}   ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗██║  ██║███████║███████╗██╔╝ ██╗
-{Fore.MAGENTA}   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
-{Fore.GREEN}                                                         version {VERSION}
-{Fore.YELLOW}[*] Path Traversal Brute-Force Tool for Penetration Testing
-{Fore.YELLOW}[*] GitHub: {GITHUB_URL}
+{Fore.CYAN}████████╗██████╗  █████╗ ██╗   ██╗███████╗██████╗ ███████╗███████╗{Style.RESET_ALL}{Fore.RED}██╗  ██╗{Style.RESET_ALL}
+{Fore.CYAN}╚══██╔══╝██╔══██╗██╔══██╗██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝{Style.RESET_ALL}{Fore.RED}╚██╗██╔╝{Style.RESET_ALL}
+{Fore.CYAN}   ██║   ██████╔╝███████║██║   ██║█████╗  ██████╔╝███████╗█████╗  {Style.RESET_ALL}{Fore.RED} ╚███╔╝ {Style.RESET_ALL}
+{Fore.CYAN}   ██║   ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██╔══╝  {Style.RESET_ALL}{Fore.RED} ██╔██╗ {Style.RESET_ALL}
+{Fore.CYAN}   ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗██║  ██║███████║███████╗{Style.RESET_ALL}{Fore.RED}██╔╝ ██╗{Style.RESET_ALL}
+{Fore.CYAN}   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝{Style.RESET_ALL}{Fore.RED}╚═╝  ╚═╝{Style.RESET_ALL}
+{Fore.CYAN}╔═══════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
+{Fore.CYAN}║{Style.RESET_ALL} {Fore.GREEN}Path Traversal Brute Force Tool By KIDHACKER{Style.RESET_ALL}                             {Fore.CYAN}║{Style.RESET_ALL}
+{Fore.CYAN}║{Style.RESET_ALL} Replaces X45 placeholder with words from a wordlist           {Fore.CYAN}║{Style.RESET_ALL}
+{Fore.CYAN}╚═══════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
 """
     print(banner)
+
 
 
 def check_for_updates():
