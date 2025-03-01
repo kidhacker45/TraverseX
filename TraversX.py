@@ -49,7 +49,8 @@ def print_banner():
 {Fore.CYAN}   ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗██║  ██║███████║███████╗{Style.RESET_ALL}{Fore.RED}██╔╝ ██╗{Style.RESET_ALL}
 {Fore.CYAN}   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝{Style.RESET_ALL}{Fore.RED}╚═╝  ╚═╝{Style.RESET_ALL}
 {Fore.CYAN}╔═══════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
-{Fore.CYAN}║{Style.RESET_ALL} {Fore.GREEN}Path Traversal Brute Force Tool By KIDHACKER{Style.RESET_ALL}                             {Fore.CYAN}║{Style.RESET_ALL}
+{Fore.CYAN}║{Style.RESET_ALL} {Fore.GREEN}Path Traversal Brute Force Tool{Style.RESET_ALL}  {Fore.CYAN}║{Style.RESET_ALL}
+{Fore.CYAN}║{Style.RESET_ALL} {Fore.GREEN}      By KIDHACKER               {Style.RESET_ALL}{Fore.CYAN}║{Style.RESET_ALL}
 {Fore.CYAN}║{Style.RESET_ALL} Replaces X45 placeholder with words from a wordlist           {Fore.CYAN}║{Style.RESET_ALL}
 {Fore.CYAN}╚═══════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
 """
