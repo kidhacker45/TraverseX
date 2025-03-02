@@ -1,15 +1,4 @@
-
-████████╗██████╗  █████╗ ██╗   ██╗███████╗██████╗ ███████╗███████╗██╗  ██╗
-╚══██╔══╝██╔══██╗██╔══██╗██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝╚██╗██╔╝
-   ██║   ██████╔╝███████║██║   ██║█████╗  ██████╔╝███████╗█████╗   ╚███╔╝ 
-   ██║   ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██╔══╝   ██╔██╗ 
-   ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗██║  ██║███████║███████╗██╔╝ ██╗
-   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
-╔═══════════════════════════════════════════════════════════════╗
-║ Path Traversal Brute Force Tool  By KIDHACKER                 ║
-║ Replaces X45 placeholder with words from a wordlist           ║
-╚═══════════════════════════════════════════════════════════════╝
-
+![image alt](https://drive.google.com/file/d/1P7xYk97vsiF_-4PmArSVVAXwjmMXdhTi/view?usp=sharing)
 # Path Traversal Brute Force Tool
 
 A Python-based tool for performing path traversal brute force attacks by replacing a placeholder in a target URL with words from a wordlist.
