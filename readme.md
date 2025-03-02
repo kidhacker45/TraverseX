@@ -34,11 +34,10 @@ pip install -r requirements.txt
 - colorama
 - tqdm
 
-## 📋 Usage
+## 📋** Usage**
 
 ```bash
 python path_traversal.py -u "http://example.com/X45/" -w wordlist.txt
-```bash
 
 ### Command-line Arguments
 
