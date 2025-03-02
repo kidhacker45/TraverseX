@@ -1,4 +1,5 @@
-![image alt](https://github.com/kidhacker45/stuffs/blob/dc25d922bc10fc4c2bae9b2c6a8dc38c9717cac3/VirtualBox_KALI%20LINUX_02_03_2025_14_02_43.png)
+![VirtualBox_KALI LINUX_02_03_2025_14_02_43](https://github.com/user-attachments/assets/12f9903c-ce0a-4e07-9465-70775544ba9d)
+
 # Path Traversal Brute Force Tool
 
 A Python-based tool for performing path traversal brute force attacks by replacing a placeholder in a target URL with words from a wordlist.
@@ -37,7 +38,8 @@ pip install -r requirements.txt
 ## 📋** Usage**
 
 ```bash
-python path_traversal.py -u "http://example.com/X45/" -w wordlist.txt
+python3 traversex.py -u "http://example.com/X45/" -w wordlist.txt
+
 
 ### Command-line Arguments
 
