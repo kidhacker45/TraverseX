@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ```bash
 python path_traversal.py -u "http://example.com/X45/" -w wordlist.txt
-```
+```bash
 
 ### Command-line Arguments
 
