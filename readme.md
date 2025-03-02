@@ -26,9 +26,6 @@ cd path-traversal-tool
 # Install dependencies
 pip install -r requirements.txt
 
-# Make the script executable
-chmod +x path_traversal.py
-```
 
 ### Dependencies
 
