@@ -37,11 +37,10 @@ pip install -r requirements.txt
 - colorama
 - tqdm
 
-## 📋** Usage**
-
-```bash
-python3 traversex.py -u "http://example.com/X45/" -w wordlist.txt
-
+## Started With -
+'''bash
+python3 TraverseX -h
+'''
 
 ### Command-line Arguments
 
@@ -55,6 +54,12 @@ python3 traversex.py -u "http://example.com/X45/" -w wordlist.txt
 | `-v, --verbose`  | Show all requests, including failures        | False                   |
 | `--timeout`      | Request timeout in seconds                   | 5.0                     |
 | `--user-agent`   | User-Agent header to use                     | Mozilla/5.0.............|
+
+### 📋 Usage
+
+```bash
+python3 traversex.py -u "http://example.com/X45/" -w wordlist.txt
+```
 
 ## 🚀 Use Cases
 
