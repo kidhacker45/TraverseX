@@ -24,10 +24,12 @@ This tool is designed for security researchers and penetration testers to effici
 # Clone the repository
 git clone https://github.com/kidhacker45/TraverseX
 cd TraverseX
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 
 ### Dependencies
 
