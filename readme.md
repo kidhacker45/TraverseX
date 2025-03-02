@@ -1,4 +1,4 @@
-![image alt](https://drive.google.com/file/d/1P7xYk97vsiF_-4PmArSVVAXwjmMXdhTi/view?usp=sharing)
+![image alt](https://github.com/kidhacker45/stuffs/blob/dc25d922bc10fc4c2bae9b2c6a8dc38c9717cac3/VirtualBox_KALI%20LINUX_02_03_2025_14_02_43.png)
 # Path Traversal Brute Force Tool
 
 A Python-based tool for performing path traversal brute force attacks by replacing a placeholder in a target URL with words from a wordlist.
