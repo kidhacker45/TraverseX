@@ -38,9 +38,9 @@ pip install -r requirements.txt
 - tqdm
 
 ## Started With -
-'''bash
+```bash
 python3 TraverseX -h
-'''
+```
 
 ### Command-line Arguments
 
