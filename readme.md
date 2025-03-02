@@ -21,8 +21,8 @@ This tool is designed for security researchers and penetration testers to effici
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/path-traversal-tool.git
-cd path-traversal-tool
+git clone https://github.com/kidhacker45/TraverseX
+cd TraverseX
 
 # Install dependencies
 pip install -r requirements.txt
