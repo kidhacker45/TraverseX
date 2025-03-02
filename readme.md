@@ -97,7 +97,7 @@ This tool is intended for legitimate security testing with proper authorization.
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║ Path Traversal Brute Force Tool                               ║
+║ Path Traversal Brute Force Tool By KIDHACKER                  ║
 ║ Replaces X45 placeholder with words from a wordlist           ║
 ╚═══════════════════════════════════════════════════════════════╝
 
