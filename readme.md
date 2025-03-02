@@ -61,6 +61,8 @@ python3 traversex.py -u <URL> -r <response_code> -w <wordlist> -o <output_file> 
 - `-r, --response-code`: Filter by response code(s) (e.g., 200,403) (Optional)
 - `-o, --output`: Output file to save results (Optional, default: output.txt)
 - `-s, --speed`: Number of parallel threads (Optional, default: 10)
+- -v, --verbose: Show detailed progress for each request
+  -t, --timeout: TIMEOUT Request timeout in seconds (default: 10)
 - `--user-agent`: Custom User-Agent string (Optional)
 - `--headers`: Custom headers in format 'Header1:value1;Header2:value2' (Optional)
 - `-h, --help`: Show help menu
