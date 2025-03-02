@@ -42,16 +42,16 @@ python path_traversal.py -u "http://example.com/X45/" -w wordlist.txt
 
 ### Command-line Arguments
 
-| Argument | Description | Default |
-|----------|-------------|---------|
-| `-u, --url` | Target URL with X45 placeholder | Required |
-| `-w, --wordlist` | Path to wordlist file | Required |
-| `-c, --codes` | Comma-separated HTTP status codes to display | 200,301,302,307,401,403 |
-| `-t, --threads` | Number of concurrent threads | 10 |
-| `-o, --output` | Output file to save successful results | None |
-| `-v, --verbose` | Show all requests, including failures | False |
-| `--timeout` | Request timeout in seconds | 5.0 |
-| `--user-agent` | User-Agent header to use | Mozilla/5.0... |
+|     Argument     |                    Description               |          Default        |
+|------------------|----------------------------------------------|-------------------------|
+| `-u, --url`      | Target URL with X45 placeholder              | Required                |
+| `-w, --wordlist` | Path to wordlist file                        | Required                |
+| `-c, --codes`    | Comma-separated HTTP status codes to display | 200,301,302,307,401,403 |
+| `-t, --threads`  | Number of concurrent threads                 | 10                      |
+| `-o, --output`   | Output file to save successful results       | None                    |
+| `-v, --verbose`  | Show all requests, including failures        | False                   |
+| `--timeout`      | Request timeout in seconds                   | 5.0                     |
+| `--user-agent`   | User-Agent header to use                     | Mozilla/5.0.............|
 
 ## 🚀 Use Cases
 
